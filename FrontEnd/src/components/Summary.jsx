@@ -40,8 +40,8 @@ const Summary = () => {
 
         <div className="col-6 mt-3">
           <div className="hold-head">
-          <h2>1.55K</h2>
-          <p className="mx-2 mt-3">+5.20%</p>
+            <h2>1.55K</h2>
+            <p className="mx-2 mt-3">+5.20%</p>
           </div>
           <p>P&L</p>
         </div>
@@ -51,9 +51,6 @@ const Summary = () => {
           <p>Investment : 29.88k</p>
         </div>
       </div>
-
-
-
     </div>
   );
 };

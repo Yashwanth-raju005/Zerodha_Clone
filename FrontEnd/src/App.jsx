@@ -1,4 +1,6 @@
 import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+
 import HomePage from "./landing_page/Home/HomePage";
 import SignUp from "./landing_page/Signup/Signup";
 import AboutPage from "./landing_page/About/AboutPage";
@@ -6,19 +8,23 @@ import ProductsPage from "./landing_page/Products/ProductsPage";
 import PricingPage from "./landing_page/Pricing/PricingPage";
 import SupportPage from "./landing_page/Support/SupportPage";
 
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
 import Navbar from "./landing_page/Navbar";
 import Footer from "./landing_page/Footer";
 import NotFound from "./landing_page/NotFound";
 import Register from "./landing_page/Logins/Register";
 import Login from "./landing_page/Logins/Login";
-import Home from "../../DashBoard/src/components/Home";
+import Home from "../../FrontEnd/src/components/Home";
+
+import "./App.css";
 
 function App() {
+  const location = useLocation();
+  const isDashboard = location.pathname.startsWith("/dashhome");
+
   return (
     <>
-      <Navbar />
+      {!isDashboard && <Navbar />}
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/signup" element={<SignUp />} />
@@ -28,10 +34,11 @@ function App() {
         <Route path="/support" element={<SupportPage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        
+        <Route path="/dashhome/*" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+
+      {!isDashboard && <Footer />}
     </>
   );
 }

@@ -15,6 +15,8 @@ const Dashboard = () => {
         <div className="col-6 dash-left mx-4">
           <WatchList />
         </div>
+        
+        
 
         <div className="col-5 dash-right p-5">
           <Routes>
@@ -26,6 +28,8 @@ const Dashboard = () => {
             <Route path="/apps" element={<Apps />} />
           </Routes>
         </div>
+
+        
       </div>
     </div>
   );

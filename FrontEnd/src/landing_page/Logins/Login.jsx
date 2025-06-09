@@ -2,14 +2,14 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -22,7 +22,7 @@ const Login = () => {
       localStorage.setItem("token", res.data.token);
       alert(res.data.message);
 
-      // window.location.href = 'http://localhost:5174/';
+      navigate('/dashhome')
 
     } catch (error) {
       alert(error.response?.data?.message || "Login failed");

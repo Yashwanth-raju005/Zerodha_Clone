@@ -7,7 +7,9 @@ import {
   KeyboardArrowUp,
   MoreHoriz,
 } from "@mui/icons-material";
-import { watchlist } from "../data/data";
+
+import { watchlist } from '../data/data'
+
 import Grow from "@mui/material/Grow";
 
 const WatchList = () => {
