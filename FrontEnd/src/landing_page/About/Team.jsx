@@ -1,11 +1,11 @@
 import React from "react";
-import founderpic from "../../../public/asserts/nithinKamath.jpg";
-import nikhilPic from "../../../public/asserts/Nikhil.jpg";
-import kailashPic from "../../../public/asserts/Kailash.jpg";
-import venuPic from "../../../public/asserts/Venu.jpg";
-import hananPic from '../../../public/asserts/Hanan.jpg'
-import seemaPic from '../../../public/asserts/Seema.jpg'
-import karthikPic from '../../../public/asserts/karthik.jpg'
+import founderpic from "/asserts/nithinKamath.jpg";
+import nikhilPic from "/asserts/Nikhil.jpg";
+import kailashPic from "/asserts/Kailash.jpg";
+import venuPic from '/asserts/Venu.jpg'
+import hananPic from '/asserts/Hanan.jpg'
+import seemaPic from '/asserts/Seema.jpg'
+import karthikPic from '/asserts/karthik.jpg'
 
 
 const Team = () => {
