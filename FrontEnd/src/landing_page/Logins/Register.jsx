@@ -10,7 +10,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8080/register", {
+      const res = await axios.post("https://zerodha-clone-me02.onrender.com/register", {
         email,
         password,
       });
