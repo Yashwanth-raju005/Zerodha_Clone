@@ -15,7 +15,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8080/login", {
+      const res = await axios.post("https://zerodha-clone-me02.onrender.com/login", {
         email,
         password,
       });
