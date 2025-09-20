@@ -13,7 +13,7 @@ const Holdings = () => {
 
   useEffect(() => {
     axios
-      .get("https://zerodha-clone-me02.onrender.com")
+      .get("https://zerodha-clone-me02.onrender.com/allHoldings")
       .then((res) => {
         console.log(res.data);
 
