@@ -13,7 +13,7 @@ const Positions = () => {
 
 
   useEffect(()=>{
-    axios.get('https://zerodha-clone-me02.onrender.com')
+    axios.get('https://zerodha-clone-me02.onrender.com/allPositions')
     .then((res)=>{
       setAllPositions(res.data)
     })
